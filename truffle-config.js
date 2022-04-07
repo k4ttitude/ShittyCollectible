@@ -1,5 +1,5 @@
 const HDWalletProvider = require("@truffle/hdwallet-provider");
-const { mnemonic, bscscanApiKey } = require(".secret.json");
+const { mnemonic, bscscanApiKey } = require("./.secret.json");
 
 module.exports = {
   // Uncommenting the defaults below
