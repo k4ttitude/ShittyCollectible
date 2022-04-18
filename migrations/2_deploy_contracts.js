@@ -1,12 +1,7 @@
-// const ConvertLib = artifacts.require("ConvertLib");
-// const MetaCoin = artifacts.require("MetaCoin");
-// const DumbToken = artifacts.require("DumbToken");
-const ShittyCollectible = artifacts.require("ShittyCollectible");
+// const ShittyCollectible = artifacts.require("ShittyCollectible");
+const Redeemable = artifacts.require("Redeemable");
 
-module.exports = function(deployer) {
-  // deployer.deploy(ConvertLib);
-  // deployer.link(ConvertLib, MetaCoin);
-  // deployer.deploy(MetaCoin);
-  // deployer.deploy(DumbToken);
-  deployer.deploy(ShittyCollectible);
+module.exports = function (deployer) {
+  // deployer.deploy(ShittyCollectible);
+  deployer.deploy(Redeemable(), 0xaebc7a814d657a4c0b3659c6ef98757d72a51323);
 };
